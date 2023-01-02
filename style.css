@@ -14,6 +14,10 @@
     color: rgb(153, 153, 153) !important;
 }
 
+.rtl {
+    text-align: right;
+}
+
 .remove-link-d {
     color: white;
     text-decoration: none;
@@ -3383,19 +3387,19 @@ body {
 }
 
 /* Graphics Level */
-#GraphicsLevel ~ .game-menu-frame #GraphicsLevelButton::before {
-  content: "High ";
-}
 #GraphicsLevel ~ .game-menu-frame #GraphicsLevelButton::after {
+  content: " גבוהים ";
+}
+#GraphicsLevel ~ .game-menu-frame #GraphicsLevelButton::before {
   content: " 🖥️";
 }
 #GraphicsLevel:checked ~ .game-menu-frame #GraphicsLevelButton {
   color: var(--common-color1);
 }
-#GraphicsLevel:checked ~ .game-menu-frame #GraphicsLevelButton::before {
-  content: "Low ";
-}
 #GraphicsLevel:checked ~ .game-menu-frame #GraphicsLevelButton::after {
+  content: " נמוכים ";
+}
+#GraphicsLevel:checked ~ .game-menu-frame #GraphicsLevelButton::before {
   content: " 📱";
 }
 #GraphicsLevel:checked ~ * *[class*=hair] {
